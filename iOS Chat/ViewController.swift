@@ -11,13 +11,18 @@ import Network
 
 class ViewController: UIViewController {
 
-	var sender = Sender()
+	var chat = Sender()
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-
-		sender.connect(to: "192.168.1.24")
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		chat.connect(to: "192.168.1.24")
 	}
+
+	@IBAction func sendHello(_ sender: Any) {
+		chat.sendHello()
+	}
+
+
 }
 
 

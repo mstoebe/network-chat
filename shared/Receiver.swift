@@ -35,7 +35,7 @@ class Receiver: NSObject {
 						//ein fataler Fehler ist aufgetreten
 						print ("connection failed (\(error))")
 					default:
-						print ("receiver state is \(newState)")
+						print ("connection state is \(newState)")
 						break
 					}
 				}

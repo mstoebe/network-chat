@@ -32,6 +32,7 @@
 		026B73CD2204AF6700CDF183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		026B73CF2204AF6700CDF183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026B73D02204AF6700CDF183 /* macOS_Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS_Chat.entitlements; sourceTree = "<group>"; };
+		026B741A2205996D00CDF183 /* macOS Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "macOS Chat.entitlements"; sourceTree = "<group>"; };
 		02BDAD0A21F489730042243F /* iOS Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BDAD0D21F489730042243F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BDAD0F21F489730042243F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		026B73C52204AF6400CDF183 /* macOS Chat */ = {
 			isa = PBXGroup;
 			children = (
+				026B741A2205996D00CDF183 /* macOS Chat.entitlements */,
 				026B73C62204AF6400CDF183 /* AppDelegate.swift */,
 				026B73C82204AF6400CDF183 /* ViewController.swift */,
 				026B73CC2204AF6700CDF183 /* Main.storyboard */,
@@ -162,6 +164,11 @@
 				TargetAttributes = {
 					026B73C32204AF6400CDF183 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					02BDAD0921F489730042243F = {
 						CreatedOnToolsVersion = 10.1;
@@ -266,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "macOS Chat/macOS Chat.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -287,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "macOS Chat/macOS Chat.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
