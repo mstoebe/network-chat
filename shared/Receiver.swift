@@ -18,7 +18,7 @@ class Receiver: NSObject {
 			listener = try NWListener(using: .udp)
 			listener.service = NWListener.Service(name: "Chat",
 												  type: "_chat._udp",
-												  domain: "local",
+												  domain: nil,
 												  txtRecord: nil)
 			listener.newConnectionHandler = { (newConnection) in
 				print("incoming connection!")
@@ -35,6 +35,7 @@ class Receiver: NSObject {
 						//ein fataler Fehler ist aufgetreten
 						print ("connection failed (\(error))")
 					default:
+						print ("receiver state is \(newState)")
 						break
 					}
 				}

@@ -9,19 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
+	let receiver = Receiver()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		// Do any additional setup after loading the view.
+		// Do view setup here.
+		receiver.start()
 	}
-
-	override var representedObject: Any? {
-		didSet {
-		// Update the view, if already loaded.
-		}
-	}
-
-
 }
 

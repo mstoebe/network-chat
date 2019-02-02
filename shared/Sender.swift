@@ -14,7 +14,7 @@ class Sender: NSObject {
 	let queue = DispatchQueue(label: "senderQueue", attributes: .concurrent)
 
 	func connect(to ip:NWEndpoint.Host) {
-//		connection = NWConnection(host: ip, port: 1234, using: .tcp)
+//		connection = NWConnection(host: ip, port: 8081, using: .udp)
 		connection = NWConnection( to: .service(name: "Chat",
 												type: "_chat._udp",
 												domain: "local",
