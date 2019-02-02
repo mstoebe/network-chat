@@ -7,17 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026B73BD2204AC2400CDF183 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B73BC2204AC2400CDF183 /* Sender.swift */; };
+		026B73BF2204ACCF00CDF183 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B73BE2204ACCF00CDF183 /* Receiver.swift */; };
+		026B73C72204AF6400CDF183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B73C62204AF6400CDF183 /* AppDelegate.swift */; };
+		026B73C92204AF6400CDF183 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B73C82204AF6400CDF183 /* ViewController.swift */; };
+		026B73CB2204AF6700CDF183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026B73CA2204AF6700CDF183 /* Assets.xcassets */; };
+		026B73CE2204AF6700CDF183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026B73CC2204AF6700CDF183 /* Main.storyboard */; };
+		026B73D62204AFBD00CDF183 /* ViewController_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B73D42204AFBD00CDF183 /* ViewController_macOS.swift */; };
+		026B73D82204AFCA00CDF183 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B73BC2204AC2400CDF183 /* Sender.swift */; };
+		026B73D92204AFCC00CDF183 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B73BE2204ACCF00CDF183 /* Receiver.swift */; };
+		026B73FB2204B2B600CDF183 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 026B73FA2204B2B600CDF183 /* Info.plist */; };
+		026B73FD2204B37A00CDF183 /* macOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026B73FC2204B37A00CDF183 /* macOS.storyboard */; };
 		02BDAD0E21F489730042243F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDAD0D21F489730042243F /* AppDelegate.swift */; };
-		02BDAD1021F489730042243F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDAD0F21F489730042243F /* ViewController.swift */; };
+		02BDAD1021F489730042243F /* ViewController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDAD0F21F489730042243F /* ViewController_iOS.swift */; };
 		02BDAD1321F489730042243F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BDAD1121F489730042243F /* Main.storyboard */; };
 		02BDAD1521F489750042243F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BDAD1421F489750042243F /* Assets.xcassets */; };
 		02BDAD1821F489750042243F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BDAD1621F489750042243F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02BDAD0A21F489730042243F /* Network Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		026B73BC2204AC2400CDF183 /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
+		026B73BE2204ACCF00CDF183 /* Receiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
+		026B73C42204AF6400CDF183 /* macOS Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macOS Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		026B73C62204AF6400CDF183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		026B73C82204AF6400CDF183 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		026B73CA2204AF6700CDF183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		026B73CD2204AF6700CDF183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		026B73CF2204AF6700CDF183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026B73D02204AF6700CDF183 /* macOS_Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS_Chat.entitlements; sourceTree = "<group>"; };
+		026B73D42204AFBD00CDF183 /* ViewController_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_macOS.swift; sourceTree = "<group>"; };
+		026B73FA2204B2B600CDF183 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026B73FC2204B37A00CDF183 /* macOS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = macOS.storyboard; sourceTree = "<group>"; };
+		02BDAD0A21F489730042243F /* iOS Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BDAD0D21F489730042243F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02BDAD0F21F489730042243F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02BDAD0F21F489730042243F /* ViewController_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_iOS.swift; sourceTree = "<group>"; };
 		02BDAD1221F489730042243F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02BDAD1421F489750042243F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02BDAD1721F489750042243F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -25,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		026B73C12204AF6400CDF183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02BDAD0721F489730042243F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +65,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026B73C52204AF6400CDF183 /* macOS Chat */ = {
+			isa = PBXGroup;
+			children = (
+				026B73C62204AF6400CDF183 /* AppDelegate.swift */,
+				026B73C82204AF6400CDF183 /* ViewController.swift */,
+				026B73CA2204AF6700CDF183 /* Assets.xcassets */,
+				026B73CC2204AF6700CDF183 /* Main.storyboard */,
+				026B73CF2204AF6700CDF183 /* Info.plist */,
+				026B73D02204AF6700CDF183 /* macOS_Chat.entitlements */,
+			);
+			path = "macOS Chat";
+			sourceTree = "<group>";
+		};
+		026B73DA2204AFE100CDF183 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				02BDAD0D21F489730042243F /* AppDelegate.swift */,
+				02BDAD0F21F489730042243F /* ViewController_iOS.swift */,
+				02BDAD1121F489730042243F /* Main.storyboard */,
+				02BDAD1921F489750042243F /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		026B73DB2204AFF100CDF183 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				026B73D42204AFBD00CDF183 /* ViewController_macOS.swift */,
+				026B73FC2204B37A00CDF183 /* macOS.storyboard */,
+				026B73FA2204B2B600CDF183 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		026B73DC2204AFFB00CDF183 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				026B73BC2204AC2400CDF183 /* Sender.swift */,
+				026B73BE2204ACCF00CDF183 /* Receiver.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
 		02BDAD0121F489730042243F = {
 			isa = PBXGroup;
 			children = (
 				02BDAD0C21F489730042243F /* Network Chat */,
+				026B73C52204AF6400CDF183 /* macOS Chat */,
 				02BDAD0B21F489730042243F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,7 +120,8 @@
 		02BDAD0B21F489730042243F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02BDAD0A21F489730042243F /* Network Chat.app */,
+				02BDAD0A21F489730042243F /* iOS Chat.app */,
+				026B73C42204AF6400CDF183 /* macOS Chat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,12 +129,11 @@
 		02BDAD0C21F489730042243F /* Network Chat */ = {
 			isa = PBXGroup;
 			children = (
-				02BDAD0D21F489730042243F /* AppDelegate.swift */,
-				02BDAD0F21F489730042243F /* ViewController.swift */,
-				02BDAD1121F489730042243F /* Main.storyboard */,
+				026B73DA2204AFE100CDF183 /* iOS */,
+				026B73DB2204AFF100CDF183 /* macOS */,
+				026B73DC2204AFFB00CDF183 /* shared */,
 				02BDAD1421F489750042243F /* Assets.xcassets */,
 				02BDAD1621F489750042243F /* LaunchScreen.storyboard */,
-				02BDAD1921F489750042243F /* Info.plist */,
 			);
 			path = "Network Chat";
 			sourceTree = "<group>";
@@ -67,9 +141,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02BDAD0921F489730042243F /* Network Chat */ = {
+		026B73C32204AF6400CDF183 /* macOS Chat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02BDAD1C21F489750042243F /* Build configuration list for PBXNativeTarget "Network Chat" */;
+			buildConfigurationList = 026B73D12204AF6700CDF183 /* Build configuration list for PBXNativeTarget "macOS Chat" */;
+			buildPhases = (
+				026B73C02204AF6400CDF183 /* Sources */,
+				026B73C12204AF6400CDF183 /* Frameworks */,
+				026B73C22204AF6400CDF183 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macOS Chat";
+			productName = "macOS Chat";
+			productReference = 026B73C42204AF6400CDF183 /* macOS Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02BDAD0921F489730042243F /* iOS Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02BDAD1C21F489750042243F /* Build configuration list for PBXNativeTarget "iOS Chat" */;
 			buildPhases = (
 				02BDAD0621F489730042243F /* Sources */,
 				02BDAD0721F489730042243F /* Frameworks */,
@@ -79,9 +170,9 @@
 			);
 			dependencies = (
 			);
-			name = "Network Chat";
+			name = "iOS Chat";
 			productName = "Network Chat";
-			productReference = 02BDAD0A21F489730042243F /* Network Chat.app */;
+			productReference = 02BDAD0A21F489730042243F /* iOS Chat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +185,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Markus Stöbe";
 				TargetAttributes = {
+					026B73C32204AF6400CDF183 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					02BDAD0921F489730042243F = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -112,12 +206,24 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02BDAD0921F489730042243F /* Network Chat */,
+				02BDAD0921F489730042243F /* iOS Chat */,
+				026B73C32204AF6400CDF183 /* macOS Chat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		026B73C22204AF6400CDF183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026B73FB2204B2B600CDF183 /* Info.plist in Resources */,
+				026B73FD2204B37A00CDF183 /* macOS.storyboard in Resources */,
+				026B73CB2204AF6700CDF183 /* Assets.xcassets in Resources */,
+				026B73CE2204AF6700CDF183 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02BDAD0821F489730042243F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,11 +237,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		026B73C02204AF6400CDF183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026B73D82204AFCA00CDF183 /* Sender.swift in Sources */,
+				026B73C92204AF6400CDF183 /* ViewController.swift in Sources */,
+				026B73D92204AFCC00CDF183 /* Receiver.swift in Sources */,
+				026B73C72204AF6400CDF183 /* AppDelegate.swift in Sources */,
+				026B73D62204AFBD00CDF183 /* ViewController_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02BDAD0621F489730042243F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02BDAD1021F489730042243F /* ViewController.swift in Sources */,
+				02BDAD1021F489730042243F /* ViewController_iOS.swift in Sources */,
+				026B73BD2204AC2400CDF183 /* Sender.swift in Sources */,
+				026B73BF2204ACCF00CDF183 /* Receiver.swift in Sources */,
 				02BDAD0E21F489730042243F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +263,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		026B73CC2204AF6700CDF183 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026B73CD2204AF6700CDF183 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		02BDAD1121F489730042243F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -162,6 +290,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		026B73D22204AF6700CDF183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "macOS Chat/macOS_Chat.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2BGP67TX9;
+				INFOPLIST_FILE = "Network Chat/macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.macundi.macOS-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		026B73D32204AF6700CDF183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "macOS Chat/macOS_Chat.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E2BGP67TX9;
+				INFOPLIST_FILE = "Network Chat/macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.macundi.macOS-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		02BDAD1A21F489750042243F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2BGP67TX9;
-				INFOPLIST_FILE = "Network Chat/Info.plist";
+				INFOPLIST_FILE = "Network Chat/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2BGP67TX9;
-				INFOPLIST_FILE = "Network Chat/Info.plist";
+				INFOPLIST_FILE = "Network Chat/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +489,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		026B73D12204AF6700CDF183 /* Build configuration list for PBXNativeTarget "macOS Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026B73D22204AF6700CDF183 /* Debug */,
+				026B73D32204AF6700CDF183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		02BDAD0521F489730042243F /* Build configuration list for PBXProject "Network Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -326,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02BDAD1C21F489750042243F /* Build configuration list for PBXNativeTarget "Network Chat" */ = {
+		02BDAD1C21F489750042243F /* Build configuration list for PBXNativeTarget "iOS Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02BDAD1D21F489750042243F /* Debug */,

@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import Network
 
 class ViewController: UIViewController {
 
+	var sender = Sender()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		sender.connect(to: "192.168.1.24")
 	}
-
-
 }
+
+
 
