@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-nP-Fqx">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-nP-Fqx">
                                 <rect key="frame" x="20" y="686" width="315" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -30,7 +30,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKk-WB-lwg">
                                 <rect key="frame" x="357" y="686" width="36" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="d1F-M8-FSu"/>
                                     <constraint firstAttribute="height" constant="30" id="in4-g5-CbK"/>
                                 </constraints>
                                 <state key="normal" title="Send"/>
@@ -72,12 +71,12 @@
                         <constraints>
                             <constraint firstItem="Oaa-nP-Fqx" firstAttribute="top" secondItem="Lpx-Ta-S9r" secondAttribute="bottom" constant="24" id="2VS-YT-eDa"/>
                             <constraint firstItem="Oaa-nP-Fqx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Nq-Ns-1ku"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rKk-WB-lwg" secondAttribute="trailing" constant="21" id="BMY-uP-mpo"/>
+                            <constraint firstItem="rKk-WB-lwg" firstAttribute="top" secondItem="Oaa-nP-Fqx" secondAttribute="top" id="CdH-cK-gou"/>
                             <constraint firstItem="Lpx-Ta-S9r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FKy-3u-Fbk"/>
                             <constraint firstItem="Lpx-Ta-S9r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HCC-ZJ-tbL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rKk-WB-lwg" secondAttribute="bottom" constant="20" id="I8W-yO-Ohi"/>
-                            <constraint firstItem="rKk-WB-lwg" firstAttribute="leading" secondItem="Oaa-nP-Fqx" secondAttribute="trailing" constant="22" id="bpt-ey-UbT"/>
+                            <constraint firstItem="rKk-WB-lwg" firstAttribute="leading" secondItem="Oaa-nP-Fqx" secondAttribute="trailing" priority="999" constant="22" id="bpt-ey-UbT"/>
                             <constraint firstAttribute="bottom" secondItem="Oaa-nP-Fqx" secondAttribute="bottom" constant="20" symbolic="YES" id="gY0-zg-9tH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rKk-WB-lwg" secondAttribute="trailing" constant="21" id="iXQ-lW-yHK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lpx-Ta-S9r" secondAttribute="trailing" constant="20" id="taS-Xi-GSV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -85,6 +84,7 @@
                     <connections>
                         <outlet property="chatTableView" destination="Lpx-Ta-S9r" id="OcH-OT-VC5"/>
                         <outlet property="inputText" destination="Oaa-nP-Fqx" id="1Xp-La-1GQ"/>
+                        <outlet property="inputTextfieldDistanceToBottom" destination="gY0-zg-9tH" id="tBn-Dt-oVY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

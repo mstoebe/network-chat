@@ -31,7 +31,6 @@
 		026B73CA2204AF6700CDF183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026B73CD2204AF6700CDF183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		026B73CF2204AF6700CDF183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		026B73D02204AF6700CDF183 /* macOS_Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS_Chat.entitlements; sourceTree = "<group>"; };
 		026B741A2205996D00CDF183 /* macOS Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "macOS Chat.entitlements"; sourceTree = "<group>"; };
 		02BDAD0A21F489730042243F /* iOS Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BDAD0D21F489730042243F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +68,6 @@
 				026B73CC2204AF6700CDF183 /* Main.storyboard */,
 				026B73CF2204AF6700CDF183 /* Info.plist */,
 				026B73CA2204AF6700CDF183 /* Assets.xcassets */,
-				026B73D02204AF6700CDF183 /* macOS_Chat.entitlements */,
 			);
 			path = "macOS Chat";
 			sourceTree = "<group>";

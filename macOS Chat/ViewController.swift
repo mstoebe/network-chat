@@ -14,14 +14,18 @@ class ViewController: NSViewController, ReceiverDelegate, NSTableViewDataSource 
 	let receiver = Receiver()
 	var receivedMessages = Array<String>()
 
+	//******************************************************************************************************************
+	//* MARK: - Lifecycle
+	//******************************************************************************************************************
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		// Do view setup here.
 		receiver.delegate = self
 		receiver.start()
 	}
 
+	//******************************************************************************************************************
+	//* MARK: - ReceiverDelegate
+	//******************************************************************************************************************
 	func receiverDidReceiveText(text: String) {
 		receivedMessages.append(text)
 		DispatchQueue.main.async { [unowned self] in
@@ -30,7 +34,7 @@ class ViewController: NSViewController, ReceiverDelegate, NSTableViewDataSource 
 	}
 
 	//******************************************************************************************************************
-	//* MARK: -
+	//* MARK: - TableViewDataSource
 	//******************************************************************************************************************
 	func numberOfRows(in tableView: NSTableView) -> Int {
 		return receivedMessages.count
