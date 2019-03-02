@@ -13,8 +13,7 @@ class Sender: NSObject {
 	var connection: NWConnection!
 	let queue = DispatchQueue(label: "senderQueue", attributes: .concurrent)
 
-	func connect(to ip:NWEndpoint.Host) {
-//		connection = NWConnection(host: ip, port: 8081, using: .udp)
+	func connect() {
 		connection = NWConnection( to: .service(name: "Chat",
 												type: "_chat._udp",
 												domain: "local",
@@ -33,6 +32,7 @@ class Sender: NSObject {
 				//ein fataler Fehler ist aufgetreten
 				print ("connection failed (\(error))")
 			default:
+				print ("connection \(newState)")
 				break
 			}
 		}
@@ -41,13 +41,36 @@ class Sender: NSObject {
 	}
 
 	func sendHello() {
-		connection.send(content: "hello".data(using: .utf8), completion: .contentProcessed({error in
-			if let error = error {
-				print("error while sending hello: \(error)")
-				return
-			}
-		}))
+		if connection.state == .ready {
+			connection.send(content: "hello".data(using: .utf8),
+							completion: .contentProcessed(
+								{error in
+									if let error = error {
+										print("error while sending hello: \(error)")
+										return
+									}
 
+									print("message sent")
+							}))
+		} else {
+			print ("connection is not ready!")
+		}
+	}
+
+	func sendText(textToSend: String) {
+		if connection.state == .ready {
+			connection.send(content: textToSend.data(using: .utf8),
+							completion: .contentProcessed(
+								{error in
+									if let error = error {
+										print("error while sending text: \(error)")
+										return
+									}
+									print("message sent")
+							}))
+		} else {
+			print ("connection is not ready!")
+		}
 	}
 
 }

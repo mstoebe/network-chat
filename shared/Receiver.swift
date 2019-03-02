@@ -9,9 +9,14 @@
 import Foundation
 import Network
 
+protocol ReceiverDelegate {
+	func receiverDidReceiveText(text: String)
+}
+
 class Receiver: NSObject {
 
 	var listener: NWListener!
+	var delegate: ReceiverDelegate?
 
 	func start() {
 		do {
@@ -35,7 +40,7 @@ class Receiver: NSObject {
 						//ein fataler Fehler ist aufgetreten
 						print ("connection failed (\(error))")
 					default:
-						print ("connection state is \(newState)")
+						print ("connection \(newState)")
 						break
 					}
 				}
@@ -59,7 +64,10 @@ class Receiver: NSObject {
 			}
 
 			//process received data
-			print("received data")
+			if let data = data, let message = String(data: data, encoding: .utf8)  {
+				print("received message: \(message)")
+				self.delegate?.receiverDidReceiveText(text: message)
+			}
 
 			//restart receiving
 			self.receive(from: connection)
